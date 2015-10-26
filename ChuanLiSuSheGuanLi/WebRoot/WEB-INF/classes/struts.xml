@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC "-//Apache Software Foundation//DTD Struts Configuration 2.1//EN" "http://struts.apache.org/dtds/struts-2.1.dtd">
+<struts>
+	 <package name="Debug" extends="struts-default" namespace="/Debug">
+             <action name="queryDebugAction" class="queryDebugAction">
+                 <result name="success" type="dispatcher">/index.jsp</result>
+                 <result name="input" type="dispatcher">/index.jsp</result>
+             </action>
+      </package>
+      
+	 <package name="struts2" extends="json-default" namespace="/">  
+	 
+	       <action name="getQuYuAll" class="renYuanAction" method="getQuYuAll">
+             	<result type="json">
+             		<param name="root">JSArr</param>
+             	</result>
+          </action>
+          <action name="getSuSheXinXi" class="renYuanAction" method="getSuSheXinXi">
+             	<result type="json">
+             		<param name="root">JSObj</param>
+             	</result>
+          </action>
+          <action name="deleteQinShiRenYuan" class="renYuanAction" method="deleteQinShiRenYuan">
+			<result type="json">
+				<param name="root">MSG</param>
+			</result>
+		 </action>
+		 <action name="AddRenYuanXinXi" class="renYuanAction" method="AddRenYuanXinXi">
+			<result type="json">
+				<param name="root">MSG</param>
+			</result>
+		 </action>
+          <action name="BangDingXiuGaiXinXi" class="renYuanAction" method="BangDingXiuGaiXinXi">
+			<result type="json">
+				<param name="root">JSArr</param>
+			</result>
+		</action>
+          <action name="EditRenYuanXinXi" class="renYuanAction" method="EditRenYuanXinXi">
+			<result type="json">
+				<param name="root">MSG</param>
+			</result>
+		</action>
+    
+    
+     <!--     ******************************洗衣卡 系统洗衣卡系统加登陆*************************************-->
+		 
+		 
+	  <action name="getVerificationCode" class="verificationCode" method="getVerificationCode">
+			  <result type="stream">
+				  <param name="contentType">image/jpeg</param>
+				  <param name="inputtName">inputStream</param>
+			  </result>
+	  </action>
+		 
+	 
+	   <action name="queryXiYiKaXinXi" class="XiYiKaAction" method="queryXiYiKaXinXi">
+           <result type="json">
+              <param name="root">JSArr</param>
+           </result>
+        </action>
+        <action name="editXiYiKa" class="XiYiKaAction" method="editXiYiKa">
+           <result type="json">
+              <param name="root">MSG</param>
+           </result>
+        </action>
+        
+        <action name="guaShi" class="XiYiKaAction" method="guaShi">
+           <result type="json">
+              <param name="root">MSG</param>
+           </result>
+        </action>
+        
+        <action name="addXiYiKa" class="XiYiKaAction" method="addXiYiKa">
+           <result type="json">
+              <param name="root">MSG</param>
+           </result>
+        </action>
+        
+         <action name="Login" class="LoginAction" method="Login">
+           <result type="json">
+              <param name="root">MSG</param>
+           </result>
+        </action>
+  <!--     *****************************洗衣卡系统加登陆******************************************* -->  
+    
+    <!-- 计分模块 -->
+		  <action name="getAllJiFen" class="jiFenAction" method="getAllJiFen">
+			  <result type="json">
+				  <param name="root">JSObj</param>
+				  
+			  </result>
+		  </action>
+		  <action name="getquyu" class="jiFenAction" method="getquyu">
+			  <result type="json">
+				  <param name="root">JSArr</param>
+				  
+			  </result>
+		  </action>
+		  <action name="getLouMing" class="jiFenAction" method="getLouMing">
+			  <result type="json">
+				  <param name="root">JSArr</param>
+				  
+			  </result>
+		  </action>
+		  <action name="getQinShi" class="jiFenAction" method="getQinShi">
+			  <result type="json">
+				  <param name="root">JSArr</param>
+				  
+			  </result>
+		  </action>
+		  <action name="qingkong" class="jiFenAction" method="qingkong">
+			  <result type="json">
+				  <param name="root">JSArr</param>
+				  
+			  </result>
+		  </action>
+		  <action name="adddengji" class="jiFenAction" method="adddengji">
+             	<result type="json">
+             		<param name="root">MSG</param>
+             	</result>
+          </action>
+          <action name="xiugaidengji" class="jiFenAction" method="xiugaidengji">
+             	<result type="json">
+             		<param name="root">MSG</param>
+             	</result>
+          </action>
+          <action name="getwuping" class="jiFenAction" method="getwuping">
+			  <result type="json">
+				  <param name="root">JSObj</param>
+				  
+			  </result>
+		  </action>
+		  <!-- 计分模块end -->
+    
+    </package> 
+    
+    
+</struts>    

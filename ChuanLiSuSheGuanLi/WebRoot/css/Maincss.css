@@ -1,0 +1,149 @@
+@CHARSET "UTF-8";
+
+body{
+	/* background-color:#A2f2f2; */
+	/*background:url(img/50d67aa68120b.jpg");*/
+	background:url(../img/50d67aa68120b.jpg) no-repeat;
+}
+@media screen and (max-width:960px){ 
+	body{
+		background-color:red;
+	}
+}
+@media screen and (max-width:768px){
+	body{
+		background-color:orange;
+	}
+}
+@media screen and (max-width:550px){
+	body{
+		background-color:yellow;
+	}
+}
+@media screen and (max-width:320px){
+	body{
+		background-color:greenk;
+	}
+}
+
+.center{
+	margin:0 auto;
+}
+#header{
+	height:90px;
+	margin:0 auto;
+}
+.kuangkuangfangda{
+	box-shadow:2px 2px 8px #797866;
+	-webkit-transform: scale(1.2) rotate(2deg);
+    -moz-transform: scale(1.2) rotate(2deg);
+    -o-transform: scale(1.2) rotate(2deg);
+    -ms-transform: scale(1.2) rotate(2deg);
+    transform: scale(1.2) rotate(2deg);
+    
+}
+.ChaCha{
+	font-family: "Arial";
+color: white;
+-webkit-transform: rotate(45deg);
+-moz-transform: rotate(45deg);
+-o-transform: rotate(45deg);
+-ms-transform: rotate(45deg);
+transform: rotate(45deg);
+text-shadow: 0 0 3px #999;
+top: 3px;
+right: 6px;
+position: absolute;
+font-size: 32px;
+width: 16px;
+height: 16px;
+z-index: 3;
+
+}
+.QuChaCha{
+	display:none;
+}
+
+/*时钟css*/
+#clock{
+    width: 200px;
+    height: 200px;
+    border: 1px solid black;
+    border-radius: 100px;
+    position:absolute;
+     margin:0 auto;
+     left:800px;
+    background-color:#eee;
+}
+#dot{
+    border-radius:2px;
+    width: 8px;
+    height: 8px;
+    position:absolute;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    left: 0;
+    right: 0;
+    background: black;
+}
+.needle
+{
+    -ms-transform-origin: 50% 100%;
+    -webkit-transform-origin: 50% 100%;
+    -moz-transform-origin: 50% 100%;
+    -o-transform-origin: 50% 100%;
+    transform-origin:50% 100%;
+}
+#second{
+    position:relative;
+    z-index:5;
+    height: 80px;
+    width: 1px;
+    margin: 20px auto;
+}
+#second_needle{
+    height: 100%;
+    width: 100%;
+    position: relative;
+    background: green;
+}
+#minute{
+    z-index:4;
+    height: 60px;
+    width: 4px;
+    position: absolute;
+    top: 40px;
+    left: 0px;
+    right: 0px;
+    margin: auto;
+}
+#minute_needle{
+    height: 100%;
+    width: 100%;
+    background: blue;
+}
+#hour{
+    z-index:3;
+    height: 40px;
+    width: 8px;
+    position: absolute;
+    top: 60px;
+    left: 0px;
+    right: 0px;
+    margin: auto;
+}
+#hour_needle{
+    height: 100%;
+    width: 100%;
+    background: red;
+}
+
+
+
+
+
+
+
+
+

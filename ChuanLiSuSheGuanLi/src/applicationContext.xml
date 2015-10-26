@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans
+	xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:p="http://www.springframework.org/schema/p"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">
+
+
+	<bean id="dataSource"
+		class="org.apache.commons.dbcp.BasicDataSource">
+		
+		<property name="driverClassName"
+			value="com.microsoft.sqlserver.jdbc.SQLServerDriver">
+		</property>
+<!-- 		//110.189.135.182 PC201411061604:1433-->
+		<property name="url"
+			value="jdbc:sqlserver://PC201411061604:1433;databaseName=ChuanLiSuSheGuanLi">
+		</property>
+		
+		<property name="username" value="sa"></property>
+		<property name="password" value="123"></property>
+		
+	</bean>
+	<bean id="sessionFactory"
+		class="org.springframework.orm.hibernate3.LocalSessionFactoryBean">
+		<property name="dataSource">
+			<ref bean="dataSource" />
+		</property>
+		<property name="hibernateProperties">
+			<props>
+				<prop key="hibernate.dialect">
+					org.hibernate.dialect.SQLServerDialect
+				</prop>
+			</props>
+		</property>
+		<property name="mappingResources">
+			<list>
+				<value>SuShe/pojo/GuanLiBiao.hbm.xml</value>
+				<value>SuShe/pojo/RenYuanBiao.hbm.xml</value>
+				<value>SuShe/pojo/XiYiKa.hbm.xml</value>
+				<value>SuShe/pojo/WuPinBiao.hbm.xml</value>
+				<value>SuShe/pojo/QingShiHaoBiao.hbm.xml</value>
+				<value>SuShe/pojo/JiFenBiao.hbm.xml</value>
+				<value>SuShe/pojo/DongLouBiao.hbm.xml</value>
+				<value>SuShe/pojo/QuYuBiao.hbm.xml</value>
+				<value>SuShe/pojo/RenYuanXiangXiBiao.hbm.xml</value>
+				<value>SuShe/pojo/WuPinMingChengBiao.hbm.xml</value></list>
+		</property>
+		</bean>
+		
+		<bean id="dao" class="SuShe.DAO.baseDAO">
+		    <property name="sessionFactory">
+		        <ref bean="sessionFactory"/>
+		    </property>
+		</bean>		
+		
+		<bean id="RenYuanService" class="SuShe.Service.RenYuanService">
+		    <property name="dao">
+		        <ref bean="dao"/>
+		    </property>
+		</bean>
+		<bean id="baseAction" class="SuShe.Action.baseAction" abstract="true">
+		   </bean>
+		   <bean id="renYuanAction" class="SuShe.Action.RenYuanAction" parent="baseAction">
+		    <property name="renYuanService">
+		        <ref bean="RenYuanService"/>
+		    </property>
+		</bean>
+	    
+	    
+	    
+	     <!-- 		 **********************洗衣卡系统加登陆 *****************************************-->
+	    <bean id="XiYiKaService" class="SuShe.Service.XiYiKaService">
+		    <property name="dao">
+		        <ref bean="dao"/>
+		    </property>
+		</bean>
+	    <bean id="XiYiKaAction" class="SuShe.Action.XiYiKaAction" parent="baseAction">
+		    <property name="xiYiKaService">
+		        <ref bean="XiYiKaService"/>
+		    </property>
+		</bean>
+		 <bean id="LoginService" class="SuShe.Service.LoginService">
+		    <property name="dao">
+		        <ref bean="dao"/>
+		    </property>
+		</bean>
+	    <bean id="LoginAction" class="SuShe.Action.LoginAction" parent="baseAction">
+		    <property name="loginService">
+		        <ref bean="LoginService"/>
+		    </property>
+		</bean>
+		<bean id="verificationCode" class="SuShe.Action.VerificationCode" parent="baseAction">
+		</bean>
+		
+		
+        <!--       **************************** 洗衣卡系统加登陆**********************************-->		
+	    
+		<bean id="jiFenAction" class="SuShe.Action.JiFenAction" parent="baseAction">
+		    <property name="jiFenService">
+		        <ref bean="JiFenService"/>
+		    </property>
+		</bean>
+	    
+	    <bean id="JiFenService" class="SuShe.Service.JiFenService">
+		    <property name="dao">
+		        <ref bean="dao"/>
+		    </property>
+		</bean>
+		
+		</beans>
+		
+		
+		
+		
+		
+		
+		
+		
+		
