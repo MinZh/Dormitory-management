@@ -137,7 +137,7 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
   					alert('验证码错误！');
   				}
   				else{
-  					alert('登录失败！用户名或密码错误');
+  					alert('登录失败！您的用户名或密码错误');
   				}
   		    });  	      
 		}
@@ -166,7 +166,7 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
     	<div style="width:890px;height:320px;background-color:#ffffff">
     		<div style="float:left">
   
-    		     <!-- 中部滑动广告 -->
+     <!-------------------------------- 中部滑动广告 ------------------------------------->
 		<div id="silder">
 			<div id="silderTop" style="width:400px;height:320px;">
 				
