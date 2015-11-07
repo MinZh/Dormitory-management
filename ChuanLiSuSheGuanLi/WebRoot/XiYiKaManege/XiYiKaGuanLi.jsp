@@ -257,7 +257,7 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
         	data-options="resizable:false,collapsible:false,minimizable:false,maximizable:false,modal:true">
        <div class="demo-info">
 		<div class="demo-tip icon-tip"></div>
-		<div>补办之前请先挂失！！！</div>
+		<div>您还未挂失，请挂失后再补办！</div>
 	    </div>	
         	<div style="margin-left:50px;width:300px;height:40px;margin-top:20px;"><font size=3>姓名:</font>
                  <input id="xingMing2" type="text" style="margin-left:20px;"></input></div>
