@@ -178,7 +178,7 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 			</div>
 		</div>
 		<!-- 中部滑动广告End -->
-<!--     			<img src="img/JDlogin.png" style="width:430px;height:320px"></img> -->
+
     		</div>
     		<!-- 账号框 -->
     		<div style="float:left;margin-left:100px;margin-top:40px;color:#999999">
