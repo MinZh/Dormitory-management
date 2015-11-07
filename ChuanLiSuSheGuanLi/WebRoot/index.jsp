@@ -182,7 +182,7 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
     		</div>
     		<!-- 账号框 -->
     		<div style="float:left;margin-left:100px;margin-top:40px;color:#999999">
-    			<span><font size="2">邮箱/用户名/已验证手机（默认登录名：admin）</font></span>
+    			<span><font size="2">邮箱/用户名/已验证手机</font></span>
     			<br/><!-- 换行  -->
     			<input style="border:1px solid;border-color:#cccccc;height:24px;width:284px;" id="deluming">
     		</div>
