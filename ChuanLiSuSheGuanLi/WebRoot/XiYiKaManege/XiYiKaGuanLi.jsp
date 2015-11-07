@@ -239,9 +239,9 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
                 <input id="dianHua1" type="text" style="margin-left:20px;" readOnly="true"></input></div>
                
          </div> 
-    <!-- 挂失 补办 修改 -->         
+    <!-- --------------------------------------挂失 补办 修改 --------------------------------------->         
           
-	 <!-- 查询信息 -->
+	 <!-------------------------------------------- 查询信息 -------------------------------------->
 	 <!-- 图片 -->
          <div data-options="region:'east'" style="width:500px;height:auto;" >
            <img src="img/imgxiyika.jpg"></img>
