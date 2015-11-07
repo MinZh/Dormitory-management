@@ -133,7 +133,8 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
     		<a href="index.jsp" style="color:#f2f2f2;"><img src="img/sichuanligonglogo.jpg" alt=""   style="width:100px;height:90px;"/></a>
     	</div>
     	<!-- “font-family:幼圆,隶书;”根据提供的字体名字查找本机字体库，将会使用能找到的第一个字体库 -->
-    	<div style="position:relative;top:15px;left:5px;margin-left: 120px;"><font size="6" style="font-family:幼圆,楷体;">川理宿舍管理系统</font></div>
+    	<div style="position:relative;top:15px;left:5px;margin-left: 120px;">
+    	<font size="6" style="font-family:幼圆,楷体;">川理宿舍管理系统</font></div>
      
      
      
