@@ -42,7 +42,7 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
       hourDeg;
       var secondrotate = 'rotate('+second*6+'deg)';
       var scss = '-moz-transform:' + secondrotate + ';-o-transform:' + secondrotate + ';-ms-transform:' + secondrotate;
-      //对?于úwebkit的?浏ˉ览à器÷,要a这a样ù定¨义?
+     
      document.getElementById('second').style.cssText = scss;
      document.getElementById('second').style.webkitTransform = secondrotate;
 
@@ -50,7 +50,7 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
      var minuterotate = 'rotate('+minuteDeg+'deg)';
      var minutecss = '-moz-transform:' + minuterotate + ';-o-transform:' + minuterotate + ';-ms-transform:' + minuterotate ;
      document.getElementById('minute').style.cssText = minutecss;
-     document.getElementById('minute').style.webkitTransform = minuterotate; //对?于úwebkit的?浏ˉ览à器÷,要a这a样ù定¨义?
+     document.getElementById('minute').style.webkitTransform = minuterotate; 
      if(hour>12){
         hour = hour -12;
      }
@@ -58,11 +58,11 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
      var hourtrotate = 'rotate('+hourDeg+'deg)';
      var hcss = '-moz-transform:' + hourtrotate + ';-o-transform:' + hourtrotate + ';-ms-transform:' + hourtrotate;
      document.getElementById('hour').style.cssText = hcss;
-     document.getElementById('hour').style.webkitTransform = hourtrotate; //对?于úwebkit的?浏ˉ览à器÷,要a这a样ù定¨义?
+     document.getElementById('hour').style.webkitTransform = hourtrotate; 
 
   }; 
 
-  //周ü期ú性?改?变?秒?钟ó的?位?置?
+  
   setInterval(function(){
      var date = new Date(),
      second = date.getSeconds();
@@ -70,11 +70,11 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
      var secondrotate = 'rotate('+second*6+'deg)';
      var scss = '-moz-transform:' + secondrotate + ';-o-transform:' + secondrotate + ';-ms-transform:' + secondrotate ;
      document.getElementById('second').style.cssText = scss;
-     document.getElementById('second').style.webkitTransform = secondrotate; //对?于úwebkit的?浏ˉ览à器÷,要a这a样ù定¨义?
+     document.getElementById('second').style.webkitTransform = secondrotate; 
 
   },1000)
 
-  //周ü期ú性?改?变?分?钟ó的?位?置?
+  
   setInterval(function(){
      var date = new Date(),
      second = date.getSeconds(),
@@ -84,11 +84,11 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
      var minuterotate = 'rotate('+minuteDeg+'deg)';
      var minutecss = '-moz-transform:' + minuterotate + ';-o-transform:' + minuterotate + ';-ms-transform:' + minuterotate ;
      document.getElementById('minute').style.cssText = minutecss;
-     document.getElementById('minute').style.webkitTransform = minuterotate; //对?于úwebkit的?浏ˉ览à器÷,要a这a样ù定¨义?
+     document.getElementById('minute').style.webkitTransform = minuterotate; 
 
   },6000)
 
-  //周ü期ú性?改?变?时±钟ó的?位?置?
+
   setInterval(function(){
       var date = new Date(),
       second = date.getSeconds(),
