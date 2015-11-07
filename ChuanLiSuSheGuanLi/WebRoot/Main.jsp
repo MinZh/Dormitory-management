@@ -103,7 +103,7 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
       var hourtrotate = 'rotate('+hourDeg+'deg)';
       var hcss = '-moz-transform:' + hourtrotate + ';-o-transform:' + hourtrotate + ';-ms-transform:' + hourtrotate;
       document.getElementById('hour').style.cssText = hcss;
-      document.getElementById('hour').style.webkitTransform = hourtrotate; //对?于úwebkit的?浏ˉ览à器÷,要a这a样ù定¨义?
+      document.getElementById('hour').style.webkitTransform = hourtrotate; 
 
    },360000)
 </script>
