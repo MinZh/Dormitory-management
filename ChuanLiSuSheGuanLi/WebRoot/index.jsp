@@ -188,7 +188,7 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
     		</div>
     		<!-- 密码框 -->
     		<div style="float:left;margin-left:100px;margin-top:20px;color:#999999">
-    			<span><font size="2">密码（默认密码：222）</font></span>
+    			<span><font size="2">密码</font></span>
     			<br/><!-- 换行  -->
     			<input type="password" style="border:1px solid;border-color:#cccccc;height:24px;width:284px;" id="MiMa"><br/><br/>
     			<span><font size="2">验证码</font></span>
