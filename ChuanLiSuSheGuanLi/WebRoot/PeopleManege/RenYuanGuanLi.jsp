@@ -37,10 +37,7 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 		    var id= node.id;
 		    qinshihao=node.text;
 		    qinshihaoId=id;
-// 		    alert(qinshihao);	   
-		     //alert(id);
   		    var url1="getSuSheXinXi?qingshihaoID="+id;
-  		   // alert(url1);
   		    $('#SuSheXinXi').datagrid({
   		      url:url1
   		    });  
