@@ -134,7 +134,6 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
            $.getJSON(url,function(result){
            			alert("保存成功！");     
                     $('#SuSheXinXi').datagrid('reload');  
-//                   $('#frmAddXiYiKa').dgReflash();	
                 });
            }
                        
