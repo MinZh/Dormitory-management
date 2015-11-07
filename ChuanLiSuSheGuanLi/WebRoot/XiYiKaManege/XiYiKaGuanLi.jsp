@@ -138,7 +138,6 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
   		var xiyikaId;
   		var renyuanId;
   		var renyuanxiangxiId;
-  		//xingMing1 xingBie1 xueHao1 shenFenZhengHao1 kaHao1 yuE1 qinShiHao1 dianHua1
   		function queryOnClick(){//根据姓名查询洗衣卡资料
   		    var xingMing=$("#txtSearch").val();
   	        var url="queryXiYiKaXinXi?xingMing="+xingMing;
@@ -188,7 +187,7 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 	                 </div>	
 				
 			</div>  
-			<!-- 查询 -->
+			<!------------------------- 查询 ------------->
 			 
           </div>    
         <!-- -north end -- -->
