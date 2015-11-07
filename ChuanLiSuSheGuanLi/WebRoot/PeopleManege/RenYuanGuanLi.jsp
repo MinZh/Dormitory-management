@@ -179,10 +179,6 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 		    </thead>
 		 </table>
     	
-    	
-    	
-    	
-    	
     	<!-- 新增窗体的代码 -->
        <div id="frmAddXiYiKa" class="easyui-window" title="新增人员" style="width:620px;height:500px;"  	data-options="resizable:false,
     	    collapsible:false,minimizable:false,maximizable:false,modal:true">	
@@ -214,9 +210,7 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 					<td><input type="button" style="background:#00BFFF;margin-left:120px"  onclick="GuanBiChuangTi()" value="关闭(NO)"/></td>
 				 </tr>
 		 	    </table>
-		   </div>     	
-         	
-         	
+		   </div>     	     	
          	
          	<div  data-options="region:'east'" style="width:200px;height:200px"><!-- 第二部分 -->
          		
@@ -231,9 +225,6 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
           </div>     	
      	
     	 </div>
-    	 	
-    	 	
-    	 	
     	 	
     	 	<!-- 修改窗体的代码 -->
        <div id="frmxiugairenyuan" class="easyui-window" title="修改人员" style="width:620px;height:500px;"  	data-options="resizable:false,
@@ -258,17 +249,13 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
                 
          	    <div style="margin-left:50px;width:300px;height:40px;margin-top:15px;"><font size=3>电话:</font>
                 <input id="DianHua" type="text" style="margin-left:40px;" ></input></div>
-         
-         
-     		 	<table style="width:300px;height:20px;margin-top:20px;"data-options="border:false">
+                <table style="width:300px;height:20px;margin-top:20px;"data-options="border:false">
      			 <tr>
        		  		<td><input type="button" style="background:#00BFFF;margin-left:80px"  onclick="EditRenYuanXinXi()" value="保存(YES)"/></td>
 					<td><input type="button" style="background:#00BFFF;margin-left:120px"  onclick="GuanBixiugai()" value="关闭(NO)"/></td>
 				 </tr>
 		 	    </table>
 		   </div>     	
-         	
-         	
          	
          	<div  data-options="region:'east'" style="width:200px;height:200px"><!-- 第二部分 -->
          		
@@ -282,17 +269,8 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
          	</div>
           </div>     	
      	
-    	 </div>
-    	 	
-    	 	
-    	 	
-    	 	
-    	 	
-    	 	
+    	 </div>	
     	 	
     	</div>
-    	
-    	
-    	
   </body>
 </html>
